@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: lato;
+}
+body{
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;   
+}
+a:visited{
+    color: rgba(0, 0, 0, 0);
+}
+.seccion-1{
+    height: 75vh;
+    font-family: sans-serif;
+    background-image: url(/images/background-sec1.jpg);
+    background-size: cover;
+    filter:brightness(.9);
+    flex-wrap: wrap;
+}
+
+.navegador{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    background-color: rgb(231, 228, 228);
+    align-items: center;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+.nav-titulo{
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+    transition: .4s;
+    }
+.nav-titulo:hover{
+    transform: scale(1.1);
+}
+.nav-titulo img{
+    height: 30px;
+    width: 35px;
+}
+.nav-titulo a{
+    color: rgb(33, 177, 76);
+}
+.nav-opciones{
+    display: flex;
+    gap: 4rem;
+    font-size: 15px;
+    flex-wrap: wrap;
+    }
+    .nav-opciones a{
+        border-radius: 1rem;
+        padding: 4px;
+        color: rgba(48, 47, 47, 0.959);
+        transition: .2s;
+}
+.nav-opciones a:hover{
+    background-color: rgba(37, 167, 65, 0.897);
+    color: white;
+    transform: scale(.9);
+    
+}
+
+.horap{
+    display: flex;
+    align-self: center;
+}
+
+.sec1-mid{
+    display: flex;
+    width: max-content;
+    height: 80%;
+    justify-content: center;
+    padding: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sec1-mid h1{
+    font-size: 2.3rem;
+    color: rgba(82, 81, 81, 0.959);
+    text-shadow: 0.1em 0.1em #6c7a6c3d;
+    background-color: rgba(216, 214, 214, 0.822);
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+.sec1-mid a{
+        display: flex;
+        width: max-content;
+        align-self: center;
+        padding: .8rem;
+        border: 1px solid rgb(173, 167, 167);
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        background-color: rgba(37, 167, 65, 0.979);
+        transition: .2s;
+        color: white;
+}
+.sec1-mid a:hover{
+    transform: scale(.9);
+}
+
+.seccion-2{
+    height: 80vh;
+    background-color: rgba(219, 218, 218, 0.849);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem ;
+    align-items: center;
+    
+}
+.tarifa{
+    padding: 1rem;
+    background-color: rgba(219, 218, 218, 0.849);
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.seccion-2 div{
+    background-color: rgba(74, 209, 85, 0.89);
+    display: flex;
+    height: 300px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    border: 1px solid rgb(47, 184, 54);
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    -webkit-box-shadow: 11px 13px 5px -4px rgba(150, 148, 148, 0.75);
+    -moz-box-shadow: 11px 13px 5px -4px rgba(160, 158, 158, 0.75);
+    box-shadow: 11px 13px 5px -4px rgba(5, 58, 27, 0.75);
+}
+
+.prom-p{
+    font-size: 3rem;
+}
+.precio{
+    font-size: 2rem;
+}
+.mid-boton{
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 1rem;
+    padding: .6rem;
+    font-size: 1.1rem;
+    background-color: rgba(240, 238, 238, 0.904);
+    transition: .2s;
+    color: black;
+}
+.mid-boton:hover{
+    background-color: rgba(62, 63, 62, 0.897);
+    color: white;
+    transform: scale(.9);
+}
+
+.seccion-3{
+    height: 75vh;
+    background-color: rgb(226, 225, 225);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.iconos{
+    display: flex;
+    gap: 10rem;
+    display: flex;
+}
+.iconos img{
+    height: 40px;
+    width: 40px;
+    margin-bottom: .7rem;
+}
+.iconos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mapa iframe{
+    height: 400px;  
+    margin-top: 4rem;
+}
+.img-hiper{
+    transition: .2s;
+}
+.img-hiper:hover{
+    transform: scale(1.1);
+}
+footer img{
+    height: 30px;
+    width: 30px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:rgb(33, 177, 76);
+    color: rgb(226, 224, 224);
+    padding: 2rem;
+    font-size: .8rem;
+}
+.fot-div1{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+}
+
+.corte1{
+    height: 23vh;
+    background-color: rgb(220, 217, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    font-size: .7rem;
+    text-align: center;
+}
+.corte1 img{
+    height: 40px;
+    width: 40px;
+}
+
+.corte1 h2{
+    width: 200px;
+}
+.corte1-div{
+    transition: .2s;
+}
+.corte1-div:hover{
+    transform: scale(1.1);
+}
+.corte2{
+    height: 23vh;
+    background-color: rgb(220, 217, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.corte2 h2{
+    font-size: 1.1rem;
+}
+
+.in-sesion{
+    height: 91vh;
+    background-color: rgb(228, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/background-sec1.jpg);
+    filter:brightness(.9);
+
+}
+
+.div-in-sesion{
+    padding: 5rem 5rem 5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    border-radius: 3rem 1rem 4rem 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(196, 191, 191, 0.1);
+}
+.user-pass{
+    border-radius: .2rem;
+    border: 1px solid rgb(148, 146, 146);
+    padding: .6rem;
+    width: 300px;
+    background-color: rgb(46, 45, 45);
+    color: white;
+    font-weight: 600;
+    
+}
+.in-sesion div input:hover{
+    background-color: rgb(207, 205, 205);
+    color: black;
+}   
+.in-sesion h2 {
+    font-size: 2.5rem;
+    color: rgb(66, 62, 62);
+    text-shadow: 0.1em 0.1em #797c793d;
+    padding-bottom: 3rem;
+}
+
+.in-sesion p a{
+    color: blue;
+    background-color: rgba(107, 105, 105, 0.295);
+    padding: 2px;
+    border-radius: .4rem;
+    font-weight: 600;
+}
+.enviar{
+    transition: .2s;
+    color: white;
+}
+.enviar:hover{
+    color: rgb(227, 236, 230);
+    background-color: rgb(116, 113, 113);
+}
+
+.recordar{
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    justify-content: space-between;
+}
+.recordar input{
+    margin-top: 4px;
+}
+select{
+    background-color: rgb(46, 45, 45);
+    color: rgb(158, 154, 154);
+}
+#code{
+    background-color: rgb(46, 45, 45);
+    color: white;
+}
+#code:hover{
+    background-color: rgb(179, 179, 179);
+    color: rgb(0, 0, 0);
+}
+.contacto{
+    background-color: rgb(226, 225, 225);
+    display: flex;
+    justify-content: center;
+    font-size: 2.1rem;
+    padding: .6rem;
+}
+#valid{
+    font-weight: bold;
+}
+
+#valid1{
+    font-size: 14px;
+    color: red;
+    padding: 0;
+}
+#valid2{
+    font-size: 14px;
+    color: red;
+    
+}
+#valid3{
+    font-size: 14px;
+    color: red;
+    
+}
+#numero{
+    background-color: rgb(36, 35, 35);
+    color: white;
+    padding: 5px;
+}
+.piso-op{
+    padding: 5px;
+}
+.input-aclarar{
+    background-color: rgb(36, 35, 35);
+    color: white;
+    padding: 5px;
+}
+.invisible{
+    display: none;
+}

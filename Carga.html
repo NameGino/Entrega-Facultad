@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navegador">
+        <div class="nav-titulo">
+            <img src="/images/wifi-on.256x212.png" alt="Icono Wifi">
+            <a href="index.html">FibraYa</a>
+        </div>
+        <div class="nav-opciones">
+        <a href="index.html">Inicio</a>
+        <p id="reloj"></p>
+        </div>
+    </nav>
+    <section class="in-sesion">
+        <form class="div-in-sesion" method="post">
+        <h2>Carga de solicitud</h2>
+        <label for="">Fecha de solicitud</label>
+        <input class="user-pass" type="date" id="usuario" required>
+        <label for="">Direccion</label>
+        <input class="user-pass" type="" id="text" required>
+        <label for="">Tipo de residencia</label>
+        <div id="div-piso">
+        <select class="piso-op" name="piso" id="piso" onchange="pisoinput()" required>
+            <option value="departamento">Departamento</option>
+            <option value="casa">Casa</option>
+            <option value="otro">Otro</option>
+        </select>
+        <input class="input-aclarar" type="text" name="" id="aclarar" placeholder="Numero de piso">
+    </div>
+        <label for="">Plan</label>
+        <select name="" id="" class="piso-op" required>    
+            <option value="">300 Megas</option>
+            <option value="">500 Megas</option>
+            <option value="">700 Megas</option>
+            <option value="">1000 Megas</option>
+        </select>
+        <label for="">Horario de instalacion</label>
+        <select name="" id="" class="piso-op" required>
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+        </select>
+        <input class="enviar user-pass" type="submit" value="Cargar">
+        </form>
+    </section>
+    <script src="/js/main.js"></script>
+</body>
+</html>

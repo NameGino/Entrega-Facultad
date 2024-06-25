@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navegador">
+        <div class="nav-titulo">
+            <img src="/images/wifi-on.256x212.png" alt="Icono Wifi">
+            <a href="index.html">FibraYa</a>
+        </div>
+        <div class="nav-opciones">
+        <a href="index.html">Inicio</a>
+        <p id="reloj"></p>
+        </div>
+    </nav>
+    <section class="in-sesion">
+        <form class="div-in-sesion" method="post">
+        <h2>Iniciar Sesion</h2>
+        <input class="user-pass" type="text" id="usuario" placeholder="Usuario" required>
+        <p id="valid1"></p>
+        <input class="user-pass" type="password" id="password" placeholder="Contraseña" required>
+        <p id="valid2"></p>
+        <input class="enviar user-pass" onclick="validacion1()" type="submit" value="Iniciar">
+        <div class="recordar">
+            <p>Recordar</p>
+            <input type="checkbox">
+        </div>
+        <p>Si no tienes una cuenta pulsa aqui: <a href="resgistrar.html"> Registarse</a></p>
+        <a href="">Olvidaste tu contraseña?</a>
+        </form>
+    </section>
+    <script src="/js/main.js"></script>
+</body>
+</html>

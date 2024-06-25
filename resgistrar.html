@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Registrar</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navegador">
+        <div class="nav-titulo">
+            <img src="/images/wifi-on.256x212.png" alt="Icono Wifi">
+            <a href="index.html">FibraYa</a>
+        </div>
+        <div class="nav-opciones">
+        <a href="index.html">Inicio</a>
+        <p id="reloj"></p>
+        </div>
+    </nav>
+    <section class="in-sesion">
+        <form action="" class="div-in-sesion" id="formu" method="post"> 
+        <h2>Registrarse</h2>
+        <input class="user-pass"  id="usuario" type="text" placeholder="Usuario" required>
+        <p id="valid1"></p>
+        <input class="user-pass" id="password" type="password" placeholder="Contraseña" required>
+        <p id="valid2"></p>
+        <input class="user-pass" type="password" id="confirmpass" placeholder="Confirme su contraseña" required>
+        <p id="valid3"></p>
+        <span id="">
+        <select name="" id="">
+            <option value="">No soy cliente</option>
+            <option value="">Soy cliente</option>
+        </select>
+        </span>
+        <input class="enviar user-pass" type="submit" value="Registrar" onclick="return validacion2()">
+        <p>Si ya tienes una cuenta pulsa aqui:<a href="cuenta.html"> Iniciar Sesion</a></p>
+        </form>
+    </section>
+    <script src="/js/main.js"></script>
+</body>
+</html>
